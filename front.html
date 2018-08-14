@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Perfect Quote</title>
+	<link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,400i" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <style type="text/css">
+    	body{
+	background: #00d2ff;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #928DAB, #00d2ff);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #928DAB, #00d2ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.inp{
+	margin-top: 30px;
+	text-align: center;
+	width: 100%;
+}
+.quote{
+	text-align: center;
+	margin-top: 100px;
+	color: white;
+}
+.inp .form-control{
+	
+			  margin-left: 39%;		
+			  box-sizing: border-box;
+			  width:300px;
+     		  border: 1px solid #ffffff;
+     		  color:white;
+     		  height: calc(2.5rem + 2px);
+     		  background: transparent;
+}
+.head{
+
+	padding-top: 10px;
+	text-align: center;
+	width: 100%;
+	height: 80px;
+	background: rgb(255,255,255,0.3);
+	
+
+}
+.head h1{
+	font-weight: bold;
+	font-size: 80px;
+	font-family: 'Merriweather Sans', sans-serif;
+	color: white;
+	font-size: 50px;
+	opacity: 1;
+	text-shadow: 2px 2px 2px #9ecbd1;
+}
+.instruct{
+	font-family: 'Merriweather Sans', sans-serif;
+	margin-top: 30px;
+	text-align: center;
+	font-size: 20px;
+	font-style: italic;
+	color: white;
+}
+.btn{
+	margin-top: 10px;
+	text-align: center;
+
+}
+.foot{
+	width: 100%;
+	height: 50px;
+	text-align: center;
+	bottom: -10px;
+	position: absolute;
+	background:#2b2c2d;
+	color: white;
+	
+}
+	.inp .form-control::-webkit-input-placeholder { 
+       color:#fff;
+          }
+
+     	.inp .form-control::-moz-placeholder { 
+       color:#fff;
+          }
+
+     	.inp .form-control::-ms-input-placeholder { 
+       color:#fff;
+          }
+
+     	.inp .form-control::-moz-placeholder { 
+       color:#fff;
+          }
+        .inp .form-control:focus {
+        	color:white;
+            background: transparent;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
+        }
+
+#quote{
+	color: white;
+	text-align: center;
+	font-size: 50px;
+	font-family: 'Merriweather Sans', sans-serif;
+	margin-top: 25px;
+	text-shadow: 1px 2px 1px #ffffff;
+	margin-left: 80px;
+	margin-right: 80px;
+
+}
+    </style>
+    <script type="text/javascript">
+    	var quotes = [
+'the road will never be easy.You gotta be tough',
+'thought engineering was your passion,yes it is',
+'never underestimate yourself,one can achieve anything',
+'marks never define intelligence',
+'be the one you dreamed of',
+'its now or never,start from today or else you wil remember this quote after 10 years',
+'read,write but most importantly listen ,listen everything',
+'you are wasting your life if you are not bunking the lectures',
+'be mad,be creative',
+'stop scrolling bro!it wont help you',
+]
+
+function newquote(){
+	var randomnumber = Math.floor(Math.random()*(quotes.length));
+	document.getElementById("quote").innerHTML = quotes[randomnumber];
+}
+    </script>
+</head>
+<body>
+	<div class="head">
+		<h1>PERFECT QUOTE</h1>
+	</div>
+	<div class="instruct">
+	<p>Enter the first number that comes in your mind to get a quote that might help you in your problem or will guide you :)</p>
+   </div>
+    <div class="inp">
+	<input type="text" class="form-control" placeholder="(1 to 100)"/>
+	<button type="button" class="btn btn-light" onclick="newquote()" >Submit</button>
+	</div>
+	<div id="quote"></div>
+    <div class="foot">
+		&copy copyrights 2018~ vansh kapooor
+	</div>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+</body>
+</html>
